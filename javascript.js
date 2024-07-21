@@ -11,4 +11,8 @@ function calc(op){
     }
 
     document.getElementById("output").value = output;
+
+    var newHistory = "<div>" + num1 + " " + op + " " + num2 + " = " + output + "</div>";
+
+    document.getElementById("hitory").innerHTML = newHistory + document.getElementById("history").innerHTML;    
 }
